@@ -1,0 +1,243 @@
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 15px; }
+
+.nopadding {
+  padding: 0 !important; }
+
+#header-section .logo-main {
+  height: 25px;
+  width: 100%;
+  background: #2898D5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 11px #00000045;
+  opacity: 1;
+  display: flex;
+  justify-content: center; }
+  #header-section .logo-main .circle {
+    height: 55px;
+    width: 51px;
+    background-color: #2898D5;
+    z-index: 5;
+    border-radius: 50%; }
+#header-section .com-nav {
+  background: #E5E5E5; }
+  #header-section .com-nav ul {
+    margin: 0;
+    display: flex; }
+    #header-section .com-nav ul li {
+      margin: 5px 20px; }
+      #header-section .com-nav ul li a {
+        color: #141414;
+        text-decoration: none;
+        font-size: 1em;
+        opacity: .5;
+        text-transform: uppercase;
+        font-weight: 600; }
+#header-section .left-nav ul {
+  justify-content: flex-end;
+  margin-right: 50px; }
+#header-section .right-nav ul {
+  justify-content: flex-start;
+  margin-left: 50px; }
+#header-section .header-gen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: 100% 100%;
+  padding-top: 140px;
+  padding-bottom: 70px; }
+#header-section .header-left {
+  background: transparent url("../img/header-left-bg.png") 0% 0% no-repeat padding-box;
+  margin-right: -1px;
+  background-size: 100% 100%; }
+#header-section .header-right {
+  background: transparent url("../img/header-right-bg.png") 0% 0% no-repeat padding-box;
+  background-size: 100% 100%; }
+#header-section .cover-heading {
+  text-align: center;
+  font: Bold 66px/75px Helvetica Neue;
+  letter-spacing: -1.32px;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 4px #383838;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0;
+  white-space: pre-line; }
+#header-section .seeMore {
+  background: #FAFAFA33 0% 0% no-repeat padding-box;
+  border: 2px solid #2898D5;
+  border-radius: 10px;
+  opacity: 1;
+  letter-spacing: -0.7px;
+  color: #2898D5;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 5px 25px;
+  margin: 60px 0; }
+
+#content-section {
+  margin: 50px 0; }
+  #content-section .content-element {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF; }
+    #content-section .content-element .content-p {
+      text-align: left;
+      font-size: 1.3em;
+      letter-spacing: -0.46px;
+      color: #5A5A5A;
+      margin: 10px 0; }
+  #content-section .our-brand {
+    box-shadow: 0px 4px 15px #00000066;
+    width: 100%; }
+    #content-section .our-brand .brand-item {
+      padding: 7px 0; }
+  #content-section .content-heading {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: -0.58px;
+    color: #1C7BBE;
+    text-transform: uppercase; }
+  #content-section .private-label {
+    margin-top: 30px; }
+
+.figure {
+  width: 100%;
+  height: 50px;
+  background-color: #DEDEDE; }
+  .figure .figure-inside {
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%; }
+
+/*   FOOTER SECTION STYLE*/
+#footer-section {
+  background: #F0F0F0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 20px 0; }
+  #footer-section .footer-logo {
+    max-width: 50px; }
+  #footer-section .footer-list li {
+    margin: 14px 0; }
+    #footer-section .footer-list li a {
+      text-decoration: none;
+      text-align: left;
+      font-size: 1.2em;
+      letter-spacing: -0.36px;
+      color: #141414;
+      opacity: 0.5; }
+  #footer-section h6 {
+    letter-spacing: -0.4px;
+    color: #525252;
+    font-size: 1.3em;
+    font-weight: 600; }
+  #footer-section .form input {
+    height: 25px;
+    outline: none; }
+    #footer-section .form input::placeholder {
+      text-align: left;
+      font-size: 1.2em;
+      letter-spacing: -0.46px;
+      color: #000000;
+      opacity: 0.3; }
+  #footer-section .form button {
+    background: #5EB2E0 0% 0% no-repeat;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: -0.38px;
+    color: #FFFFFF;
+    padding: 2px 5px; }
+    #footer-section .form button:hover {
+      background: #5EB2E0 0% 0% no-repeat; }
+  #footer-section .copyright {
+    text-align: left;
+    font: 1.2em;
+    letter-spacing: -0.36px;
+    color: #525252; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+#pageContent {
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  #pageContent p {
+    letter-spacing: 1.08px;
+    color: #5A5959;
+    padding: 12px 0; }
+  #pageContent .news-heading {
+    color: #2898D5;
+    font-size: 1.4em;
+    margin: 15px 0;
+    font-weight: 600; }
+  #pageContent .part-heading {
+    color: #2898D5;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 15px 0;
+    width: 20%;
+    font-weight: 600; }
+  #pageContent .product-item {
+    margin: 15px 0; }
+  #pageContent .writeUs {
+    margin: 20px 0; }
+  #pageContent .product-img {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 50px 0; }
+  #pageContent .product-info-list ul {
+    list-style: disc;
+    padding-left: 15px; }
+    #pageContent .product-info-list ul li {
+      letter-spacing: 0.72px;
+      color: #C2C2C2; }
+
+.pageMap {
+  letter-spacing: -0.28px;
+  color: #606060;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 50px; }
+
+.page-name {
+  letter-spacing: -0.36px;
+  color: #2898D5;
+  text-transform: capitalize;
+  width: 20%;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  .page-name a {
+    color: #2898D5;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 1em; }
+
+.border-top {
+  border-top: 1px solid #2898D5;
+  padding-top: 12px; }
+
+.border-bottom {
+  border-bottom: 1px solid #2898D5;
+  padding-bottom: 12px; }
+
+.main-btn {
+  background: #2898D5 0% 0% no-repeat;
+  box-shadow: 0px 3px 7px #00000070;
+  opacity: 0.75;
+  padding: 10px 30px;
+  letter-spacing: -0.51px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase; }
