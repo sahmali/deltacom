@@ -5,6 +5,29 @@ $mainblue:#2898D5;
 .float-right{
 	float: right;
 }
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.lightactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}
 #pageContent{
 	padding-top: 50px;
 	padding-bottom: 100px;
@@ -46,6 +69,26 @@ $mainblue:#2898D5;
 			li{
 				letter-spacing: 0.72px;
 				color: #C2C2C2;
+			}
+		}
+	}
+	.product-table{
+		table{
+			color: #C2C2C2;
+			.table-btn{
+				background-color: #FFFFFF;
+				color: $mainblue;
+				border: none;
+				outline: none;
+				&:hover{
+					background: #FFFFFF;
+				}
+			}
+			th{
+				font-weight: 600;
+			}
+			td{
+				
 			}
 		}
 	}
