@@ -5,40 +5,34 @@ html {
 .nopadding {
   padding: 0 !important; }
 
-#header-section .logo-main {
-  height: 25px;
-  width: 100%;
-  background: #2898D5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 5px 11px #00000045;
-  opacity: 1;
-  display: flex;
-  justify-content: center; }
-  #header-section .logo-main .circle {
-    height: 55px;
-    width: 51px;
-    background-color: #2898D5;
-    z-index: 5;
-    border-radius: 50%; }
-#header-section .com-nav {
-  background: #E5E5E5; }
-  #header-section .com-nav ul {
-    margin: 0;
-    display: flex; }
-    #header-section .com-nav ul li {
-      margin: 5px 20px; }
-      #header-section .com-nav ul li a {
-        color: #141414;
-        text-decoration: none;
-        font-size: 1em;
-        opacity: .5;
-        text-transform: uppercase;
-        font-weight: 600; }
-#header-section .left-nav ul {
-  justify-content: flex-end;
-  margin-right: 50px; }
-#header-section .right-nav ul {
-  justify-content: flex-start;
-  margin-left: 50px; }
+#header-section .nav-bg {
+  background-color: #e5e5e5;
+  margin: 0 -15px;
+  position: relative; }
+  #header-section .nav-bg > svg {
+    background-color: #e5e5e5; }
+  #header-section .nav-bg .full-nav {
+    position: absolute;
+    z-index: 111;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    #header-section .nav-bg .full-nav .nav-part {
+      flex-grow: 1; }
+      #header-section .nav-bg .full-nav .nav-part ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly; }
+        #header-section .nav-bg .full-nav .nav-part ul li a {
+          font-size: 1em;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-decoration: none;
+          color: #919191; }
+          #header-section .nav-bg .full-nav .nav-part ul li a:hover {
+            color: #919191;
+            text-decoration: none; }
 #header-section .header-gen {
   display: flex;
   align-items: center;
@@ -170,6 +164,9 @@ html {
 .float-right {
   float: right; }
 
+.m-b-20 {
+  margin-bottom: 20px; }
+
 #lightbox {
   position: fixed;
   z-index: 1000;
@@ -224,17 +221,51 @@ html {
     #pageContent .product-info-list ul li {
       letter-spacing: 0.72px;
       color: #C2C2C2; }
-  #pageContent .product-table table {
+  #pageContent .product-table {
     color: #C2C2C2; }
-    #pageContent .product-table table .table-btn {
+    #pageContent .product-table .table-btn {
       background-color: #FFFFFF;
       color: #2898D5;
       border: none;
       outline: none; }
-      #pageContent .product-table table .table-btn:hover {
+      #pageContent .product-table .table-btn:hover {
         background: #FFFFFF; }
-    #pageContent .product-table table th {
+    #pageContent .product-table .accordionItem .pr-data {
+      padding: 5px 0;
+      border-bottom: 1px solid #C2C2C2;
+      margin: 0 -15px; }
+    #pageContent .product-table .accordionItem .pr-button {
+      padding: 4px 0; }
+    #pageContent .product-table .product-table-heading {
       font-weight: 600; }
+      #pageContent .product-table .product-table-heading .pr-data {
+        padding: 5px 0;
+        border-bottom: 2px solid #C2C2C2;
+        margin: 0 -15px; }
+    #pageContent .product-table .accContent .pr-table-info p {
+      padding: 5px;
+      border: 1px solid #C2C2C2;
+      color: #C2C2C2; }
+    #pageContent .product-table .accContent h4 {
+      color: #2898D5;
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 0; }
+
+.accClose .accContent {
+  height: 0;
+  border-bottom: none !important;
+  transition: .4s ease all;
+  opacity: 0;
+  z-index: -1000;
+  position: absolute; }
+
+.accOpen .accContent {
+  transition: .4s ease all;
+  border-bottom: none !important; }
+  .accOpen .accContent a:hover {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .pageMap {
   letter-spacing: -0.28px;
@@ -273,3 +304,6 @@ html {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase; }
+
+.main-btn-sm {
+  padding: 3px 5px; }

@@ -5,6 +5,9 @@ $mainblue:#2898D5;
 .float-right{
 	float: right;
 }
+.m-b-20{
+	margin-bottom: 20px;
+}
 #lightbox {
   position: fixed;
   z-index: 1000;
@@ -73,7 +76,8 @@ $mainblue:#2898D5;
 		}
 	}
 	.product-table{
-		table{
+		
+
 			color: #C2C2C2;
 			.table-btn{
 				background-color: #FFFFFF;
@@ -84,12 +88,61 @@ $mainblue:#2898D5;
 					background: #FFFFFF;
 				}
 			}
-			th{
-				font-weight: 600;
+			.accordionItem{
+				
+				.pr-data{
+					padding: 5px 0;
+					border-bottom: 1px solid #C2C2C2;
+					margin: 0 -15px;
+				}
+				.pr-button{
+					padding: 4px 0;
+				}
 			}
-			td{
+			.product-table-heading{
+				font-weight: 600;
+				.pr-data{
+					padding: 5px 0;
+					border-bottom: 2px solid #C2C2C2;
+					margin: 0 -15px;
+				}
 				
 			}
+			.accContent{
+				.pr-table-info p{
+					padding: 5px;
+					border: 1px solid #C2C2C2;
+					color: #C2C2C2;
+
+				}
+				h4{
+					color: $mainblue;
+					font-size: 1.2em;
+					font-weight: 600;
+					margin: 0;
+				}
+			}
+		
+	}
+}
+/////ACCORDION
+.accClose .accContent{
+	height: 0;
+	border-bottom: none !important;
+	transition: .4s ease all;
+	opacity: 0;
+	z-index: -1000;
+	position: absolute;
+
+}
+.accOpen .accContent{
+	
+	transition: .4s ease all;
+	border-bottom: none !important;
+	a{
+		&:hover{
+			color: #FFFFFF;
+			text-decoration: none;
 		}
 	}
 }
@@ -134,3 +187,7 @@ $mainblue:#2898D5;
 		text-transform: uppercase;
 
 		}
+
+.main-btn-sm{
+	padding: 3px 5px;
+}

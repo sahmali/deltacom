@@ -4,6 +4,9 @@
 .float-right {
   float: right; }
 
+.m-b-20 {
+  margin-bottom: 20px; }
+
 #lightbox {
   position: fixed;
   z-index: 1000;
@@ -58,17 +61,51 @@
     #pageContent .product-info-list ul li {
       letter-spacing: 0.72px;
       color: #C2C2C2; }
-  #pageContent .product-table table {
+  #pageContent .product-table {
     color: #C2C2C2; }
-    #pageContent .product-table table .table-btn {
+    #pageContent .product-table .table-btn {
       background-color: #FFFFFF;
       color: #2898D5;
       border: none;
       outline: none; }
-      #pageContent .product-table table .table-btn:hover {
+      #pageContent .product-table .table-btn:hover {
         background: #FFFFFF; }
-    #pageContent .product-table table th {
+    #pageContent .product-table .accordionItem .pr-data {
+      padding: 5px 0;
+      border-bottom: 1px solid #C2C2C2;
+      margin: 0 -15px; }
+    #pageContent .product-table .accordionItem .pr-button {
+      padding: 4px 0; }
+    #pageContent .product-table .product-table-heading {
       font-weight: 600; }
+      #pageContent .product-table .product-table-heading .pr-data {
+        padding: 5px 0;
+        border-bottom: 2px solid #C2C2C2;
+        margin: 0 -15px; }
+    #pageContent .product-table .accContent .pr-table-info p {
+      padding: 5px;
+      border: 1px solid #C2C2C2;
+      color: #C2C2C2; }
+    #pageContent .product-table .accContent h4 {
+      color: #2898D5;
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 0; }
+
+.accClose .accContent {
+  height: 0;
+  border-bottom: none !important;
+  transition: .4s ease all;
+  opacity: 0;
+  z-index: -1000;
+  position: absolute; }
+
+.accOpen .accContent {
+  transition: .4s ease all;
+  border-bottom: none !important; }
+  .accOpen .accContent a:hover {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .pageMap {
   letter-spacing: -0.28px;
@@ -107,3 +144,6 @@
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase; }
+
+.main-btn-sm {
+  padding: 3px 5px; }

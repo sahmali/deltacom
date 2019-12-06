@@ -8,53 +8,43 @@ html{
 }
 
 #header-section{
-		.logo-main{
-		height: 25px;
-		width: 100%;
-		background: #2898D5 0% 0% no-repeat padding-box;
-		box-shadow: 0px 5px 11px #00000045;
-		opacity: 1;
-		display: flex;
-    	justify-content: center;
-		.circle{
-			height: 55px;
-		    width: 51px;
-		    background-color: #2898D5;
-		    z-index: 5;
-		    border-radius: 50%;
-		    
-		}
-}
-	.com-nav{
-		background: #E5E5E5;
-		
-		ul{
-			margin: 0;
+	.nav-bg{
 
+		background-color: #e5e5e5;
+		margin: 0 -15px;
+		position: relative;
+		>svg{
+			background-color: #e5e5e5
+		}
+		.full-nav{
+			position: absolute;
+			z-index: 111;
+			left: 0;
+			width: 100%;
 			display: flex;
-			li{
-				margin: 5px 20px;
-				a{
-					color: #141414;
-					text-decoration: none;
-					font-size: 1em;
-					opacity: .5;
-					text-transform: uppercase;
-					font-weight: 600;
+			justify-content: space-evenly;
+
+			.nav-part{
+					flex-grow:1;
+			ul{
+				display: flex;
+				width: 100%;
+				justify-content:space-evenly;
+				li{
+					a{
+						font-size: 1em;
+						text-transform: uppercase;
+						font-weight: 600;
+						text-decoration: none;
+						color: #919191;
+						&:hover{
+							color: #919191;
+							text-decoration: none;
+						}
+					}
 				}
 			}
 		}
-	}
-	.left-nav{
-		ul{
-			justify-content:flex-end;
-			margin-right: 50px;
-		}
-	}
-	.right-nav{
-		ul{
-			justify-content:flex-start;
-			margin-left: 50px;	
 		}
 	}
 
