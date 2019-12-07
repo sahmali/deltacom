@@ -2,49 +2,158 @@ $mainblue: #2898D5;
 html{
 	font-family: 'Merriweather', serif;
 	font-size:15px;
+	overflow-x: hidden;
 }
 .nopadding{
 	padding: 0 !important;
 }
-
+@keyframes hamLinkFade{
+			from{
+				opacity: 0;
+				transform: translateX(50px);
+			}
+			to{
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
 #header-section{
+	.nav-hamburger{
+		height: 10vh;
+		width: 100%;
+		background-color: $mainblue;
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		padding: 0 50px;
+
+
+		.ham-logo{
+			width: 30px;
+		}
+
+		.hamburger{ 
+			cursor: pointer;
+			div{
+				width: 25px;
+				height: 3px;
+				margin: 5px;
+				background-color: #FFFFFF;
+				transition: all .4s ease;
+			}
+		}
+		
+		.ham-toggle{
+			.line1{
+				transform: rotate(-45deg) translate(-5px,6px);
+			}
+			.line2{
+				opacity: 0;
+			}
+			.line3{
+				transform: rotate(45deg) translate(-5px,-6px);
+
+			}
+		}
+		.ham-nav-active{
+			transform: translateX(0%) !important;
+		}
+		.ham-links{
+			position: absolute;
+			width: 50%;
+			height: 90vh;
+			background-color: $mainblue;
+			top: 10vh;
+			right: 0;
+			z-index: 5;
+			display: flex;
+			flex-direction:column;
+			justify-content: space-around;
+			align-items:center;
+			transform:translateX(100%);
+			transition: transform .5s ease-in;
+
+			
+				li{
+					opacity: 0;	
+					a{
+					color: #FFFFFF;
+					text-decoration: none;
+					font-size: 2em;
+					font-weight: 300;
+					&:hover{
+						text-decoration:none;
+						color: #FFFFFF;
+
+					}
+				}
+			}
+		}
+	}
 	.nav-bg{
 
 		background-color: #e5e5e5;
 		margin: 0 -15px;
 		position: relative;
 		>svg{
-			background-color: #e5e5e5
+			background-color: #e5e5e5;
 		}
-		.full-nav{
+		.nav-gen{
 			position: absolute;
-			z-index: 111;
+			z-index: 2;
 			left: 0;
 			width: 100%;
 			display: flex;
 			justify-content: space-evenly;
-
+			
 			.nav-part{
 					flex-grow:1;
+				ul{
+					display: flex;
+					width: 100%;
+					justify-content:space-evenly;
+					margin-bottom: 0 !important;
+				
+				}
+			}
+		}
+		.nav-shadow{
+			background-color: $mainblue;
 			ul{
-				display: flex;
-				width: 100%;
-				justify-content:space-evenly;
+				margin-bottom: 0 !important;
 				li{
+					padding: 3px 0;
 					a{
-						font-size: 1em;
-						text-transform: uppercase;
-						font-weight: 600;
 						text-decoration: none;
-						color: #919191;
+						color: #FFFFFF;
+						text-transform: uppercase;
+
 						&:hover{
-							color: #919191;
+							color: #FFFFFF;
 							text-decoration: none;
 						}
 					}
 				}
 			}
 		}
+		
+		.full-nav{
+			.nav-part{
+				ul{
+					li{
+						a{
+						text-transform: uppercase;
+						font-weight: 300;
+						text-decoration: none;
+						color: #919191;
+						&:hover{
+							color: #919191;
+							text-decoration: none;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -226,3 +335,4 @@ html{
 
 
 @import 'pages.scss';
+@import 'delta-responsive.scss';
