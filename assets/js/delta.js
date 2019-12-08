@@ -120,3 +120,12 @@ const catName  = document.getElementsByClassName('category-name');
 
         }
     }
+
+///FILE UPLOAD BUTTON
+
+const inputFileMask=document.querySelector(".input-file-mask");
+const inputFile = document.querySelector('.input-file');
+
+inputFile.addEventListener('change', ()=>{
+    inputFileMask.value=inputFile.value
+})

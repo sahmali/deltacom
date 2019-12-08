@@ -1,9 +1,19 @@
 $mainblue:#2898D5;
+h1,h2,h3,h4,h5,h6{
+	color: $mainblue;
+}
+p{
+ 			color: #5A5959;
+ 			letter-spacing: 1.08px;
+ 		}
 .float-left{
 	float: left;
 }
 .float-right{
 	float: right;
+}
+.clear-both{
+	clear: both;
 }
 .m-b-20{
 	margin-bottom: 20px;
@@ -240,11 +250,196 @@ $mainblue:#2898D5;
 			}
 		}
 	}
+ 	////INGREDIENTS(PRUDUCT PROPERTIES) PAGE STYLE END
 
+
+ 	////ABOUTUS PAGE STYLE START
+ 	.aboutus{
+ 		.pageMap{
+ 			margin-bottom: 15px;
+ 		}
+ 		h3,h4,h5{
+ 			color: $mainblue;
+ 			letter-spacing: 1.44px;
+
+ 		}
+ 		h3{
+ 			font-weight: 600;
+ 			font-size: 2em;
+ 		}
+ 		h4{
+			width: 75%;
+			font-size: 1.6em;
+ 			margin:20px auto;
+ 		}
+ 		p{
+ 			color: #5A5959;
+ 			letter-spacing: 1.08px;
+ 		}
+ 		p.border-bottom{
+ 			padding-bottom: 50px;
+ 		}
+ 		.fixed-bg{
+ 			background-image: url('../img/aboutbg.png');
+ 			height: 200px;
+ 			background-attachment: fixed;
+ 			background-repeat: no-repeat;
+ 			background-size: cover;
+ 			background-position: 0;
+ 		}
+ 	}
+ 	.contact-page{
+ 		.pageMap{
+ 			margin-bottom: 15px;
+ 		}
+		.contact-label{
+			width: 60%;
+			margin:0 auto 100px auto;
+			letter-spacing: -0.54px;
+			color: #AFAFAF;
+		}	
+
+
+ 		.mapouter{
+ 			position:relative;
+	 		text-align:right;
+	 		height:100%;
+	 		width:100%;
+ 			}
+ 		.gmap_canvas {
+ 			overflow:hidden;
+	 		background:none!important;
+	 		height:100%;
+	 		width:100%;
+ 		}
+ 	.contact-form{
+ 		padding-top: 40px;
+ 		margin-top: 30px;
+ 		border-top: 2px solid $mainblue;
+ 		}
+ 	}
+ 	.career{
+ 		.career-bg{
+ 			background-image: url('../img/careerbg.png');
+ 			height: 200px;
+ 			background-attachment: fixed;
+ 			background-repeat: no-repeat;
+ 			background-size: cover;
+ 			background-position: 0;
+ 		}
+ 		h4{
+ 			font-size: 1.5em;
+ 		}
+ 		h5{
+ 			font-size: 1.2em;
+ 		}
+ 	}
 
 
 }
+/////FORM STYLES
+.contact-form{
+ 			form{
+ 				label{
+ 					text-transform: capitalize;
+ 					color:#525151;
+ 					letter-spacing: -0.3px;
+ 					font-weight: 400;
+ 					margin-bottom: 0;
+ 					span.red-star{
+ 						color: #FD0000;
+ 					}
+ 				}
+ 				input,textarea,select{
+ 					border: 1px solid #E5E5E5;
+ 					border-radius: 0;
+ 					box-shadow: none;
+ 					color: #525151;
+ 				}
+ 				input{
+ 					padding: 20px;
+ 				}
+ 				select{
+ 					height: 42px;
+ 					margin-bottom: 15px;
+ 					option[value=""][disabled]{
+ 					display: none;
 
+
+ 					}
+ 				}
+ 				.request-radio{
+					display: flex;
+					flex-wrap: wrap;
+ 					li{
+ 						flex-grow: 1;
+						background-color: #E5E5E5;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+ 						input{
+ 							visibility: hidden;
+ 							display: none;
+ 						}
+ 						label{
+ 							cursor: pointer;
+ 							font-size: 1.2em;
+ 							width: 100%;
+ 							text-align: center;
+ 							padding: 10px 0;
+ 							transition: all .5s ease; 
+ 							border-right: 1px solid #fff;
+ 						}
+ 						input:checked + label {
+   						background: #c2c2c2;
+						}
+ 					}
+ 				}
+ 				.input-filewrapper{
+ 					position: relative;
+ 					height: 62px;
+ 					margin-bottom: 15px;
+ 					label{
+ 						position: absolute;
+ 						top: 0;
+ 						left: 0;
+ 					}
+					.input-file-mask{
+						position: absolute;
+						top: 20px;
+						left: 0;
+						width: 100%;
+						padding: 10px 20px;
+						cursor: pointer;
+
+
+					}
+					.input-file{
+						position: absolute;
+						top: 20px;
+						left: 0;
+						opacity: 0;
+						z-index: 4;
+						width: 100%;
+						padding: 9px 20px;
+						cursor: pointer;
+		
+
+					}
+					&::after{
+							content: "upload";
+							color: white;
+							text-transform: uppercase;
+							background-color: $mainblue;
+							padding: 10px;
+							position: absolute;
+							top: 21px;
+    						right: 0;
+						}
+
+ 				}
+ 			}
+ 		}
 
 ///// PRODUCT INFO ACCORDION
 .accClose .accContent{

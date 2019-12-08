@@ -1,8 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #2898D5; }
+
+p {
+  color: #5A5959;
+  letter-spacing: 1.08px; }
+
 .float-left {
   float: left; }
 
 .float-right {
   float: right; }
+
+.clear-both {
+  clear: both; }
 
 .m-b-20 {
   margin-bottom: 20px; }
@@ -158,6 +168,138 @@
         border: none; }
         #pageContent .property-table table tbody tr:nth-child(2n+1) {
           background: #D2EBF1; }
+  #pageContent .aboutus .pageMap {
+    margin-bottom: 15px; }
+  #pageContent .aboutus h3, #pageContent .aboutus h4, #pageContent .aboutus h5 {
+    color: #2898D5;
+    letter-spacing: 1.44px; }
+  #pageContent .aboutus h3 {
+    font-weight: 600;
+    font-size: 2em; }
+  #pageContent .aboutus h4 {
+    width: 75%;
+    font-size: 1.6em;
+    margin: 20px auto; }
+  #pageContent .aboutus p {
+    color: #5A5959;
+    letter-spacing: 1.08px; }
+  #pageContent .aboutus p.border-bottom {
+    padding-bottom: 50px; }
+  #pageContent .aboutus .fixed-bg {
+    background-image: url("../img/aboutbg.png");
+    height: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0; }
+  #pageContent .contact-page .pageMap {
+    margin-bottom: 15px; }
+  #pageContent .contact-page .contact-label {
+    width: 60%;
+    margin: 0 auto 100px auto;
+    letter-spacing: -0.54px;
+    color: #AFAFAF; }
+  #pageContent .contact-page .mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%; }
+  #pageContent .contact-page .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%; }
+  #pageContent .contact-page .contact-form {
+    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 2px solid #2898D5; }
+  #pageContent .career .career-bg {
+    background-image: url("../img/careerbg.png");
+    height: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0; }
+  #pageContent .career h4 {
+    font-size: 1.5em; }
+  #pageContent .career h5 {
+    font-size: 1.2em; }
+
+.contact-form form label {
+  text-transform: capitalize;
+  color: #525151;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+  margin-bottom: 0; }
+  .contact-form form label span.red-star {
+    color: #FD0000; }
+.contact-form form input, .contact-form form textarea, .contact-form form select {
+  border: 1px solid #E5E5E5;
+  border-radius: 0;
+  box-shadow: none;
+  color: #525151; }
+.contact-form form input {
+  padding: 20px; }
+.contact-form form select {
+  height: 42px;
+  margin-bottom: 15px; }
+  .contact-form form select option[value=""][disabled] {
+    display: none; }
+.contact-form form .request-radio {
+  display: flex;
+  flex-wrap: wrap; }
+  .contact-form form .request-radio li {
+    flex-grow: 1;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contact-form form .request-radio li input {
+      visibility: hidden;
+      display: none; }
+    .contact-form form .request-radio li label {
+      cursor: pointer;
+      font-size: 1.2em;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      transition: all .5s ease;
+      border-right: 1px solid #fff; }
+    .contact-form form .request-radio li input:checked + label {
+      background: #c2c2c2; }
+.contact-form form .input-filewrapper {
+  position: relative;
+  height: 62px;
+  margin-bottom: 15px; }
+  .contact-form form .input-filewrapper label {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .contact-form form .input-filewrapper .input-file-mask {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer; }
+  .contact-form form .input-filewrapper .input-file {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    z-index: 4;
+    width: 100%;
+    padding: 9px 20px;
+    cursor: pointer; }
+  .contact-form form .input-filewrapper::after {
+    content: "upload";
+    color: white;
+    text-transform: uppercase;
+    background-color: #2898D5;
+    padding: 10px;
+    position: absolute;
+    top: 21px;
+    right: 0; }
 
 .accClose .accContent {
   transform: scaleY(0);
