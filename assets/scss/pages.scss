@@ -318,6 +318,9 @@ p{
  		border-top: 2px solid $mainblue;
  		}
  	}
+
+ 	 	////CAREER PAGE STYLE START
+
  	.career{
  		.career-bg{
  			background-image: url('../img/careerbg.png');
@@ -334,6 +337,128 @@ p{
  			font-size: 1.2em;
  		}
  	}
+ 	 	////CAREER PAGE STYLE END
+
+
+ 	 	////POWERHOUSE PAGE STYLE START
+
+
+
+	.powerhouse{
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    p{
+	    	text-align: center;
+	    	letter-spacing: 1.44px;
+			color: #5A5959;
+			font-size: 1.6em;
+	    }		
+	    ul.powerlist{
+				color: #5A5959;
+				li{
+					font-size: 1.8em;
+					margin: 15px 0;
+					i{
+						color: $mainblue;
+						margin-right: 15px;
+					}
+				}
+			}
+	}
+ 	 	////POWERHOUSE PAGE STYLE END
+
+ 	 	////CHEMICALS PAGE STYLE START
+		.chemicals{
+			padding-top: 50px;
+			.chemicals-sidebar{
+				h6{
+					font-size: 1.2em;
+					text-transform: capitalize;
+					padding: 5px 0;
+					margin: 0;
+				}
+				.categorylist{
+					border-top: 1px solid $mainblue;
+					.accOpen{
+						&::after{
+							content: "-";
+						}
+					}
+					>li{
+						position: relative;
+						cursor: pointer;
+						letter-spacing: -0.36px;
+						color: #606060;
+						text-transform: capitalize;
+						font-size: 1.2em;
+						border-bottom: 1px solid $mainblue;
+						padding: 4px 0;
+						&::after{
+							content: "+";
+							color:$mainblue;
+							font-size: 1.2em;
+							position: absolute;
+							top: 0;
+							right: 0;
+						}
+						ul{
+							margin-left: 25px;
+    						margin-top: 5px;
+							li{
+								a{
+								letter-spacing: -0.32px;
+								color: #606060;
+								text-transform: capitalize;
+								font-size: 1em;
+								&:hover{
+										color: #F1893E;
+										text-decoration: none;
+									}
+								}
+							}
+						}
+					}
+				}
+				.pl-info{
+					margin: 40px 0;
+					padding: 30px 0;
+					p{
+						padding: 5px 0;
+						font-size: .8em;
+						letter-spacing: -0.26px;
+					}
+				}
+				.sub-letter{
+					input{
+						border: 1px solid $mainblue;
+						width: 100%;
+					}
+					button.main-btn{
+						float: right;
+						margin-top: 5px;
+					}
+					h5{
+						letter-spacing: -0.4px;
+						color: #8A8A8A;
+						text-transform: uppercase;
+						font-weight: 600;
+						font-size: 1.3em;
+						margin: 0;
+					}
+					p{
+						padding: 0;
+						font-size: .8em;
+						letter-spacing: -0.26px;
+					}
+				}
+			}
+		}
+
+		
+ 	 	////CHEMICALS PAGE STYLE START
+
 
 
 }
@@ -502,8 +627,19 @@ p{
 		text-decoration: none;
 		text-transform: uppercase;
 
-		}
-
+}
+button.main-btn{
+	border: none;
+	outline: none;
+}
 .main-btn-sm{
 	padding: 3px 5px;
+}
+a.link-img{
+	letter-spacing: -0.36px;
+	color: #373737;
+	font-size: 1.2em;
+	&:hover{
+		text-decoration: none;
+	}
 }

@@ -224,6 +224,86 @@ p {
     font-size: 1.5em; }
   #pageContent .career h5 {
     font-size: 1.2em; }
+  #pageContent .powerhouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #pageContent .powerhouse p {
+      text-align: center;
+      letter-spacing: 1.44px;
+      color: #5A5959;
+      font-size: 1.6em; }
+    #pageContent .powerhouse ul.powerlist {
+      color: #5A5959; }
+      #pageContent .powerhouse ul.powerlist li {
+        font-size: 1.8em;
+        margin: 15px 0; }
+        #pageContent .powerhouse ul.powerlist li i {
+          color: #2898D5;
+          margin-right: 15px; }
+  #pageContent .chemicals {
+    padding-top: 50px; }
+    #pageContent .chemicals .chemicals-sidebar h6 {
+      font-size: 1.2em;
+      text-transform: capitalize;
+      padding: 5px 0;
+      margin: 0; }
+    #pageContent .chemicals .chemicals-sidebar .categorylist {
+      border-top: 1px solid #2898D5; }
+      #pageContent .chemicals .chemicals-sidebar .categorylist .accOpen::after {
+        content: "-"; }
+      #pageContent .chemicals .chemicals-sidebar .categorylist > li {
+        position: relative;
+        cursor: pointer;
+        letter-spacing: -0.36px;
+        color: #606060;
+        text-transform: capitalize;
+        font-size: 1.2em;
+        border-bottom: 1px solid #2898D5;
+        padding: 4px 0; }
+        #pageContent .chemicals .chemicals-sidebar .categorylist > li::after {
+          content: "+";
+          color: #2898D5;
+          font-size: 1.2em;
+          position: absolute;
+          top: 0;
+          right: 0; }
+        #pageContent .chemicals .chemicals-sidebar .categorylist > li ul {
+          margin-left: 25px;
+          margin-top: 5px; }
+          #pageContent .chemicals .chemicals-sidebar .categorylist > li ul li a {
+            letter-spacing: -0.32px;
+            color: #606060;
+            text-transform: capitalize;
+            font-size: 1em; }
+            #pageContent .chemicals .chemicals-sidebar .categorylist > li ul li a:hover {
+              color: #F1893E;
+              text-decoration: none; }
+    #pageContent .chemicals .chemicals-sidebar .pl-info {
+      margin: 40px 0;
+      padding: 30px 0; }
+      #pageContent .chemicals .chemicals-sidebar .pl-info p {
+        padding: 5px 0;
+        font-size: .8em;
+        letter-spacing: -0.26px; }
+    #pageContent .chemicals .chemicals-sidebar .sub-letter input {
+      border: 1px solid #2898D5;
+      width: 100%; }
+    #pageContent .chemicals .chemicals-sidebar .sub-letter button.main-btn {
+      float: right;
+      margin-top: 5px; }
+    #pageContent .chemicals .chemicals-sidebar .sub-letter h5 {
+      letter-spacing: -0.4px;
+      color: #8A8A8A;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.3em;
+      margin: 0; }
+    #pageContent .chemicals .chemicals-sidebar .sub-letter p {
+      padding: 0;
+      font-size: .8em;
+      letter-spacing: -0.26px; }
 
 .contact-form form label {
   text-transform: capitalize;
@@ -353,5 +433,16 @@ p {
   text-decoration: none;
   text-transform: uppercase; }
 
+button.main-btn {
+  border: none;
+  outline: none; }
+
 .main-btn-sm {
   padding: 3px 5px; }
+
+a.link-img {
+  letter-spacing: -0.36px;
+  color: #373737;
+  font-size: 1.2em; }
+  a.link-img:hover {
+    text-decoration: none; }
