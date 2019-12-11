@@ -71,6 +71,18 @@ html {
 #header-section .nav-bg {
   margin: 0 -15px;
   position: relative; }
+  #header-section .nav-bg .search-form {
+    position: absolute;
+    z-index: 5; }
+    #header-section .nav-bg .search-form button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: #fff; }
+      #header-section .nav-bg .search-form button:hover {
+        background-color: transparent;
+        border: none;
+        outline: none; }
   #header-section .nav-bg .logo-link img {
     position: absolute;
     top: 0;

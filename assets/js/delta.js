@@ -60,16 +60,26 @@ const accHD = document.getElementsByClassName('accordionItemHeading');
     const fullNav=document.querySelector(".full-nav");
     const logolink=document.querySelector(".nav-bg .logo-link img");
     const navbgMask=document.querySelector('.nav-bg .nav-bg-mask');
-    const linklist=document.querySelectorAll('.nav-bg .nav-gen .nav-part ul')
+    const linklist=document.querySelectorAll('.nav-bg .nav-gen .nav-part ul');
+    const searchForm=document.querySelector('.nav-bg .search-form');
+    const navPart=fullNav.querySelectorAll('.nav-part')[1];
+    const lastLink=navPart.querySelectorAll('li')[navPart.querySelectorAll('li').length-1];
+
     
         fullNav.style.top = navbgMask.clientHeight*(32/58)+'px';
         logolink.style.width = navbgMask.clientHeight+'px';
+        searchForm.style.right = window.innerWidth-(lastLink.offsetLeft+lastLink.offsetWidth+20)+'px';
+        searchForm.style.top = (navbgMask.clientHeight*(32/58)-searchForm.offsetHeight)/2+'px';
         for (var i = linklist.length - 1; i >= 0; i--) {
             linklist[i].style.height = navbgMask.clientHeight*(32/58)+'px';
         }
     function reportWindowSize() {
          fullNav.style.top = navbgMask.clientHeight*(32/58)+'px';
          logolink.style.width = navbgMask.clientHeight+'px' ;
+         searchForm.style.right = window.innerWidth-(lastLink.offsetLeft+lastLink.offsetWidth+20)+'px';
+         searchForm.style.top = (navbgMask.clientHeight*(32/58)-searchForm.offsetHeight)/2+'px';
+
+
          for (var i = linklist.length - 1; i >= 0; i--) {
             linklist[i].style.height = navbgMask.clientHeight*(32/58)+'px';
         } 
