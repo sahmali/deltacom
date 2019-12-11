@@ -13,6 +13,11 @@ html {
   to {
     opacity: 1;
     transform: translateX(0px); } }
+#header-section .static-nav {
+  background-color: #2898D5;
+  height: 50px;
+  width: 100%;
+  margin: 0 -15px; }
 #header-section .nav-hamburger {
   height: 10vh;
   width: 100%;
@@ -64,13 +69,23 @@ html {
           text-decoration: none;
           color: #FFFFFF; }
 #header-section .nav-bg {
-  background-color: #e5e5e5;
   margin: 0 -15px;
   position: relative; }
-  #header-section .nav-bg > svg {
-    background-color: #e5e5e5; }
-  #header-section .nav-bg .nav-gen {
+  #header-section .nav-bg .logo-link img {
     position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%); }
+  #header-section .nav-bg .nav-bg-mask {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    filter: drop-shadow(0 5px 11px #000045);
+    min-height: 58px; }
+  #header-section .nav-bg .nav-gen {
     z-index: 2;
     left: 0;
     width: 100%;
@@ -82,10 +97,14 @@ html {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
-        margin-bottom: 0 !important; }
+        margin-bottom: 0 !important;
+        align-items: center; }
   #header-section .nav-bg .nav-shadow {
-    background-color: #2898D5; }
+    position: fixed;
+    z-index: 2;
+    top: 0; }
     #header-section .nav-bg .nav-shadow ul {
+      background-color: #2898D5;
       margin-bottom: 0 !important; }
       #header-section .nav-bg .nav-shadow ul li {
         padding: 3px 0; }
@@ -96,17 +115,23 @@ html {
           #header-section .nav-bg .nav-shadow ul li a:hover {
             color: #FFFFFF;
             text-decoration: none; }
-  #header-section .nav-bg .full-nav .nav-part ul li a {
-    text-transform: uppercase;
-    font-weight: 350;
-    text-decoration: none;
-    color: #919191; }
-    #header-section .nav-bg .full-nav .nav-part ul li a:hover {
-      color: #919191;
-      text-decoration: none; }
-  #header-section .nav-bg .full-nav .nav-part ul li .nav-link-active {
-    border-bottom: 1px solid #F1893E;
-    padding-bottom: 5px; }
+  #header-section .nav-bg .full-nav {
+    position: absolute;
+    top: 32px;
+    z-index: 1; }
+    #header-section .nav-bg .full-nav .nav-part ul {
+      background-color: #dedede; }
+      #header-section .nav-bg .full-nav .nav-part ul li a {
+        text-transform: uppercase;
+        font-weight: 350;
+        text-decoration: none;
+        color: #919191; }
+        #header-section .nav-bg .full-nav .nav-part ul li a:hover {
+          color: #919191;
+          text-decoration: none; }
+      #header-section .nav-bg .full-nav .nav-part ul li .nav-link-active {
+        border-bottom: 1px solid #F1893E;
+        padding-bottom: 5px; }
 #header-section .header-gen {
   display: flex;
   align-items: center;

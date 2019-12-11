@@ -18,6 +18,12 @@ html{
 			}
 		}
 #header-section{
+	.static-nav{
+		background-color: $mainblue;
+		height: 50px;
+		width: 100%;
+		margin: 0 -15px;
+	}
 	.nav-hamburger{
 		height: 10vh;
 		width: 100%;
@@ -92,14 +98,27 @@ html{
 	}
 	.nav-bg{
 
-		background-color: #e5e5e5;
 		margin: 0 -15px;
 		position: relative;
-		>svg{
-			background-color: #e5e5e5;
+		.logo-link{
+			img{
+				position: absolute;
+			    top: 0;
+			    left: 50%;
+			    z-index: 3;
+			    transform: translateX(-50%);
+			}
+		}
+		.nav-bg-mask{
+			position: relative;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			width: 100%;
+			filter: drop-shadow(0 5px 11px #000045);
+			min-height: 58px;
 		}
 		.nav-gen{
-			position: absolute;
 			z-index: 2;
 			left: 0;
 			width: 100%;
@@ -113,13 +132,17 @@ html{
 					width: 100%;
 					justify-content:space-evenly;
 					margin-bottom: 0 !important;
-				
+					align-items: center;				
 				}
 			}
 		}
 		.nav-shadow{
-			background-color: $mainblue;
+			
+			position: fixed;
+			z-index: 2;
+			top: 0;
 			ul{
+				background-color: $mainblue;
 				margin-bottom: 0 !important;
 				li{
 					padding: 3px 0;
@@ -139,8 +162,12 @@ html{
 		}
 		
 		.full-nav{
+			position: absolute;
+			top: 32px;
+			z-index: 1;
 			.nav-part{
 				ul{
+					background-color: #dedede;
 					li{
 						a{
 						text-transform: uppercase;
@@ -169,6 +196,7 @@ html{
 		background-size: 100% 100%;
 		padding-top: 140px;
 		padding-bottom: 70px;
+		
 	}
 	.header-left{
 		background: transparent url('../img/header-left-bg.png') 0% 0% no-repeat padding-box;

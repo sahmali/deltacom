@@ -58,16 +58,21 @@ const accHD = document.getElementsByClassName('accordionItemHeading');
 /////NAV-BG JS
     const navbg=document.querySelector(".nav-bg");
     const fullNav=document.querySelector(".full-nav");
-    const bgfill=document.querySelector(".bgfill")
-    console.log(navbg.clientHeight)
+    const logolink=document.querySelector(".nav-bg .logo-link img");
+    const navbgMask=document.querySelector('.nav-bg .nav-bg-mask');
+    const linklist=document.querySelectorAll('.nav-bg .nav-gen .nav-part ul')
     
-    console.log(window.scr)
-            fullNav.style.bottom =navbg.clientHeight/10+"px"
-
+        fullNav.style.top = navbgMask.clientHeight*(32/58)+'px';
+        logolink.style.width = navbgMask.clientHeight+'px';
+        for (var i = linklist.length - 1; i >= 0; i--) {
+            linklist[i].style.height = navbgMask.clientHeight*(32/58)+'px';
+        }
     function reportWindowSize() {
-        fullNav.style.bottom =navbg.clientHeight/10+"px"
-
-  
+         fullNav.style.top = navbgMask.clientHeight*(32/58)+'px';
+         logolink.style.width = navbgMask.clientHeight+'px' ;
+         for (var i = linklist.length - 1; i >= 0; i--) {
+            linklist[i].style.height = navbgMask.clientHeight*(32/58)+'px';
+        } 
 }
 
 window.onresize = reportWindowSize;
