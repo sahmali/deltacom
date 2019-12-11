@@ -115,20 +115,25 @@ p {
     #pageContent .categories h5 {
       font-size: 1.4em;
       margin-left: 38px; }
-    #pageContent .categories ul.categorylist > li {
+    #pageContent .categories .categorylist .category-name {
       cursor: pointer;
       font-size: 1.3em;
       margin: 15px 0; }
-      #pageContent .categories ul.categorylist > li i {
+      #pageContent .categories .categorylist .category-name i {
         margin-right: 25px;
         font-size: 0.5em; }
-      #pageContent .categories ul.categorylist > li ul.subcat {
-        margin: 15px 4px !important;
-        padding-left: 50px;
-        border-left: 1px solid #575757;
-        transition: all .5s linear; }
-        #pageContent .categories ul.categorylist > li ul.subcat li {
-          font-size: .8em; }
+    #pageContent .categories .categorylist ul.subcat {
+      margin: 15px 4px !important;
+      padding-left: 50px;
+      border-left: 1px solid #575757;
+      transition: all .5s linear; }
+      #pageContent .categories .categorylist ul.subcat li a {
+        font-size: 1em;
+        color: #575757;
+        text-decoration: none; }
+        #pageContent .categories .categorylist ul.subcat li a:hover {
+          color: #575757;
+          text-decoration: none; }
   #pageContent .property-table {
     color: #313131; }
     #pageContent .property-table .page-name {

@@ -115,13 +115,13 @@ const catName  = document.getElementsByClassName('category-name');
         catName[i].addEventListener('click', toggleCat, false);
     }
     function toggleCat() {
-        const mainItemClass = this.className;
+        const mainItemClass = this.parentNode.className;
         
         for (i = 0; i < catName.length; i++) {
-            catName[i].className = 'category-name accClose';
+            catName[i].parentNode.className = 'category-wrapper accClose';
         }
-        if (mainItemClass == 'category-name accClose') {
-            this.className= 'category-name accOpen';
+        if (mainItemClass == 'category-wrapper accClose') {
+            this.parentNode.className= 'category-wrapper accOpen';
 
         }
     }
