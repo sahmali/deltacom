@@ -1,9 +1,25 @@
 @media only screen and (max-width: 768px) {
   .nav-bg {
-    display: none; } }
+    display: none; }
+
+  #footer-section .footer-wrapper {
+    flex-direction: column; }
+
+  .product-item img {
+    margin: 0 auto; }
+  .product-item .product-name {
+    text-align: center; }
+
+  .chemical-main {
+    margin-top: 20px; }
+    .chemical-main > div {
+      margin: 5px 0; } }
 @media only screen and (min-width: 768px) {
   .hamburger-cont {
     display: none; } }
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .nav-bg .full-nav .nav-part li a {
-    font-size: .7em !important; } }
+    font-size: .7em !important; }
+
+  .chemical-main {
+    margin-top: 20px; } }

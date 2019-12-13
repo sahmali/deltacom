@@ -59,6 +59,12 @@ p {
     font-weight: 600; }
   #pageContent .product-item {
     margin: 15px 0; }
+    #pageContent .product-item a .product-name {
+      font-size: 1.4em;
+      color: #525252;
+      margin-top: 5px; }
+    #pageContent .product-item a:hover {
+      text-decoration: none; }
   #pageContent .writeUs {
     margin: 20px 0; }
   #pageContent .product-img {
@@ -156,6 +162,8 @@ p {
           background-color: transparent;
           color: #2898D5;
           border: none; }
+    #pageContent .property-table .prop-item > div {
+      margin-bottom: 40px; }
     #pageContent .property-table table {
       text-transform: capitalize;
       font-size: 0.8em;
@@ -258,7 +266,7 @@ p {
       border-top: 1px solid #2898D5; }
       #pageContent .chemicals .chemicals-sidebar .categorylist .accOpen::after {
         content: "-"; }
-      #pageContent .chemicals .chemicals-sidebar .categorylist > li {
+      #pageContent .chemicals .chemicals-sidebar .categorylist .category-wrapper {
         position: relative;
         cursor: pointer;
         letter-spacing: -0.36px;
@@ -267,22 +275,22 @@ p {
         font-size: 1.2em;
         border-bottom: 1px solid #2898D5;
         padding: 4px 0; }
-        #pageContent .chemicals .chemicals-sidebar .categorylist > li::after {
+        #pageContent .chemicals .chemicals-sidebar .categorylist .category-wrapper::after {
           content: "+";
           color: #2898D5;
           font-size: 1.2em;
           position: absolute;
           top: 0;
           right: 0; }
-        #pageContent .chemicals .chemicals-sidebar .categorylist > li ul {
+        #pageContent .chemicals .chemicals-sidebar .categorylist .category-wrapper ul {
           margin-left: 25px;
           margin-top: 5px; }
-          #pageContent .chemicals .chemicals-sidebar .categorylist > li ul li a {
+          #pageContent .chemicals .chemicals-sidebar .categorylist .category-wrapper ul li a {
             letter-spacing: -0.32px;
             color: #606060;
             text-transform: capitalize;
             font-size: 1em; }
-            #pageContent .chemicals .chemicals-sidebar .categorylist > li ul li a:hover {
+            #pageContent .chemicals .chemicals-sidebar .categorylist .category-wrapper ul li a:hover {
               color: #F1893E;
               text-decoration: none; }
     #pageContent .chemicals .chemicals-sidebar .pl-info {

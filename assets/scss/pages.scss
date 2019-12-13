@@ -66,6 +66,17 @@ p{
 	}
 	.product-item{
 		margin: 15px 0;
+		a{
+				
+			.product-name{
+				font-size: 1.4em;
+				color: #525252;
+				margin-top: 5px;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 	.writeUs{
 		margin: 20px 0;
@@ -198,10 +209,11 @@ p{
 
 
 	////INGREDIENTS(PRUDUCT PROPERTIES) PAGE STYLE START
+	
 	.property-table{
 		color: #313131;
 		.page-name{
-			margin-bottom: 50px
+			margin-bottom: 50px;
 		}
 		.item-title{
 			display: flex;
@@ -227,6 +239,11 @@ p{
 					color: $mainblue;
 					border: none;
 				}
+			}
+		}
+		.prop-item{
+			>div{
+				margin-bottom: 40px;
 			}
 		}
 		table{
@@ -398,7 +415,7 @@ p{
 							content: "-";
 						}
 					}
-					>li{
+					.category-wrapper{
 						position: relative;
 						cursor: pointer;
 						letter-spacing: -0.36px;

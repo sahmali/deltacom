@@ -44,7 +44,6 @@ const accHD = document.getElementsByClassName('accordionItemHeading');
         var itemClass = this.parentNode.parentNode.parentNode.className;
         for (i = 0; i < accItem.length; i++) {
             accItem[i].className = 'accordionItem accClose';
-            console.log(this.parentNode.parentNode.parentNode.className)
         }
         if (itemClass == 'accordionItem accClose') {
             this.parentNode.parentNode.parentNode.className = 'accordionItem accOpen';
